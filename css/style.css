@@ -1,12 +1,78 @@
+*{
+	font-family: 'Unna', serif;
 
-.emmpleo{
-	width: 30% ;
-	float: right;
-	background-color: #aef792;
-  }
-.categoria{
-	
-	width: 69.3%;
-	background-color: #2B7A0B;
-	float: left;
 }
+
+.navbar-brand{
+	color: #922B21;
+	margin-left: 20px;
+	font-size: 24px;
+
+}
+
+.navbar-collapseE .btn{
+	color: #922B21;
+	text-decoration: underline;
+	
+}
+
+.card{
+	margin-top: 5px;
+	text-align: center;
+	border: 2px solid #4FFF33;
+	color: #922B21;
+}
+
+.card .btn{
+	border-bottom: 2px solid #4FFF33;
+	border-top: 2px solid #4FFF33;
+	transition: 400ms;
+	color: #922B21;
+}
+
+.card img{
+	width: 80%;
+	height: 100px;
+}
+
+.card .btn:hover{
+	width: 80%;
+	background-color: #4FFF33;
+	color: #fff;
+	border: 1px solid #4FFF33;
+}
+
+.card-body{
+	background-color: rgba(79, 255, 51, 0.1);
+	margin: 5px;
+	border-radius: 5px;
+}
+
+
+
+
+
+.navbar-collapseE {
+	float:right;
+}
+
+.emmpleo h2{
+	background-color: #4FFF33;
+	color: #922B21;
+	border-radius: 5px;
+}
+
+.emmpleo button{
+	border-bottom: 1px solid #922B21;
+	color: #922B21;
+	font-size: 18px;
+	width: 45%;
+	margin-top:3px
+}
+
+.emmpleo button:hover{
+	border: 1px solid #922B21;
+	color: #922B21;
+}
+
+

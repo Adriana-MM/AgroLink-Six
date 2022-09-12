@@ -4,57 +4,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>inicio</title>
+  <title>AgroLinkSix</title>
 
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unna:ital@1&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
   <!-- header -->
-  <nav class="navbar navbar-expand-sm navbar-dark  fixed-top" style="background-color: #4FFF33;">
+ 
+
     <div class="container-fluid">
-      <a class="navbar-brand" href="javascript:void(0)">AgroLinkSix</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mynavbar">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
+      <nav class="navbar navbar-expand-sm navbar-dark  fixed-top" style="background-color: #4FFF33; ">
 
-            <div class="dropdown">
-              <a class="nav-link" href="javascript:void(0)" data-bs-toggle="dropdown">categorias</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">veterinaria</a></li>
-                <li><a class="dropdown-item" href="#">zootecnia</a></li>
-                <li><a class="dropdown-item" href="#">agropecuaria</a></li>
-              </ul>
-            </div>
-          </li>
-
-        </ul>
-        <button type="button" class="btn btn-success" data-bs-toggle="modal"
-          data-bs-target="#resgistro">registrarse</button>
-        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#iniciar">iniciar
-          secion</button>
-
-        <div id="demo" class="collapse">
-
-          <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Search">
-            <button class="btn btn-primary" type="button">Search</button>
+        <div class="col-12 col-sm-12 col-md-5 col-lg-9 col-xl-9">
+          <a class="navbar-brand" href="javascript:void(0)">AgroLinkSix</a>
         </div>
-        </form>
-        <img src="img/buscar.webp" data-bs-toggle="collapse" data-bs-target="#demo" style="width: 35px">
-      </div>
 
+        <div class="col-12 col-sm-12 col-md-7 col-lg-3 col-xl-3">
+          <div class=" navbar-collapseE" >
+            <button type="button" class="btn " data-bs-toggle="modal"
+              data-bs-target="#resgistro">Crea tu cuenta</button>
+            <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#iniciar">Ingresa</button>
+          </div>
+     
+        </div>
+
+    </nav>
     </div>
 
 
-  </nav>
+
+
+
   <!-- The Modal -->
   <div class="modal" id="iniciar">
     <div class="modal-dialog modal-sm">
@@ -163,159 +151,174 @@
   </div>
 
 <main>
-  <div class="container-fluid" id=" targetas" style="margin-top: 55px;">
-    <div class="emmpleo">
-      <center>
-        <h2> CATEGORIAS</h2>
-        <button type="submit" class="btn btn-outline-success">veterinaria</button>
-        <button type="submit" class="btn btn-outline-success">zootecnia</button>
-        <button type="submit" class="btn btn-outline-success"">agropecuaria</button></center>
-  <br><br><br><br>
-</div>
 
 
-    <div class=" categoria">
-          <div style=" float: left; width: 30%; margin: 1%;">
+  <div class="container-fluid conTarjetas" id=" targetas" style="margin-top: 100px;">
+    
+<div class="row">
 
-            <div class="card">
-              <img class="card-img-top" src="img/lucj.png" alt="Card image" style="width:100%">
-              <div class="card-body">
-                <h4 class="card-title">Fabian sneyder</h4>
-                <p class="card-text">ingeniero en sistema</p>
-                <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
 
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                  ver perfil
-                </button>
+      <div class="col-lg-8">
+     
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="card">
+                    <center>
+                      <img class="card-img-top" src="img/lucj.png" alt="Card image" >
+                    </center>
+                    <div class="card-body">
+                      <h4 class="card-title">Fabian sneyder</h4>
+                      <p class="card-text">Ingeniero en sistema</p>
+                      <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+      
+                      <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ver perfil
+                      </button>
+                    </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div style=" float: left; width: 30%; margin: 1%;">
 
-            <div class="card">
-              <img class="card-img-top" src="img/lucj.png" alt="Card image" style="width:100%">
-              <div class="card-body">
-                <h4 class="card-title">Fabian sneyder</h4>
-                <p class="card-text">ingeniero en sistema</p>
-                <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
-
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                  ver perfil
-                </button>
+              <div class="col-lg-3">
+                <div class="card">
+                    <center>
+                      <img class="card-img-top" src="img/lucj.png" alt="Card image" >
+                    </center>
+                    <div class="card-body">
+                      <h4 class="card-title">Fabian sneyder</h4>
+                      <p class="card-text">Ingeniero en sistema</p>
+                      <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+      
+                      <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ver perfil
+                      </button>
+                    </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div style=" float: left; width: 30%; margin: 1%;">
 
-            <div class="card">
-              <img class="card-img-top" src="img/lucj.png" alt="Card image" style="width:100%">
-              <div class="card-body">
-                <h4 class="card-title">Fabian sneyder</h4>
-                <p class="card-text">ingeniero en sistema</p>
-                <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
-
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                  ver perfil
-                </button>
+              <div class="col-lg-3">
+                <div class="card">
+                    <center>
+                      <img class="card-img-top" src="img/lucj.png" alt="Card image" >
+                    </center>
+                    <div class="card-body">
+                      <h4 class="card-title">Fabian sneyder</h4>
+                      <p class="card-text">Ingeniero en sistema</p>
+                      <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+      
+                      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ver perfil
+                      </button>
+                    </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div style=" float: left; width: 30%; margin: 1%;">
 
-            <div class="card">
-              <img class="card-img-top" src="img/lucj.png" alt="Card image" style="width:100%">
-              <div class="card-body">
-                <h4 class="card-title">Fabian sneyder</h4>
-                <p class="card-text">ingeniero en sistema</p>
-                <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
-
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                  ver perfil
-                </button>
+              <div class="col-lg-3">
+                <div class="card">
+                    <center>
+                      <img class="card-img-top" src="img/lucj.png" alt="Card image" >
+                    </center>
+                    <div class="card-body">
+                      <h4 class="card-title">Fabian sneyder</h4>
+                      <p class="card-text">Ingeniero en sistema</p>
+                      <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+      
+                      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ver perfil
+                      </button>
+                    </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div style=" float: left; width: 30%; margin: 1%;">
-
-            <div class="card">
-              <img class="card-img-top" src="img/lucj.png" alt="Card image" style="width:100%">
-              <div class="card-body">
-                <h4 class="card-title">Fabian sneyder</h4>
-                <p class="card-text">ingeniero en sistema</p>
-                <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
-
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                  ver perfil
-                </button>
+              <div class="col-lg-3">
+                <div class="card">
+                    <center>
+                      <img class="card-img-top" src="img/lucj.png" alt="Card image" >
+                    </center>
+                    <div class="card-body">
+                      <h4 class="card-title">Fabian sneyder</h4>
+                      <p class="card-text">Ingeniero en sistema</p>
+                      <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+      
+                      <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ver perfil
+                      </button>
+                    </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div style=" float: left; width: 30%; margin: 1%;">
 
-            <div class="card">
-              <img class="card-img-top" src="img/lucj.png" alt="Card image" style="width:100%">
-              <div class="card-body">
-                <h4 class="card-title">Fabian sneyder</h4>
-                <p class="card-text">ingeniero en sistema</p>
-                <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
-
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                  ver perfil
-                </button>
+              <div class="col-lg-3">
+                <div class="card">
+                    <center>
+                      <img class="card-img-top" src="img/lucj.png" alt="Card image" >
+                    </center>
+                    <div class="card-body">
+                      <h4 class="card-title">Fabian sneyder</h4>
+                      <p class="card-text">Ingeniero en sistema</p>
+                      <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+      
+                      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ver perfil
+                      </button>
+                    </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div style=" float: left; width: 30%; margin: 1%;">
 
-            <div class="card">
-              <img class="card-img-top" src="img/lucj.png" alt="Card image" style="width:100%">
-              <div class="card-body">
-                <h4 class="card-title">Fabian sneyder</h4>
-                <p class="card-text">ingeniero en sistema</p>
-                <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
-
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                  ver perfil
-                </button>
+              <div class="col-lg-3">
+                <div class="card">
+                    <center>
+                      <img class="card-img-top" src="img/lucj.png" alt="Card image" >
+                    </center>
+                    <div class="card-body">
+                      <h4 class="card-title">Fabian sneyder</h4>
+                      <p class="card-text">Ingeniero en sistema</p>
+                      <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+      
+                      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ver perfil
+                      </button>
+                    </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div style=" float: left; width: 30%; margin: 1%;">
 
-            <div class="card">
-              <img class="card-img-top" src="img/lucj.png" alt="Card image" style="width:100%">
-              <div class="card-body">
-                <h4 class="card-title">Fabian sneyder</h4>
-                <p class="card-text">ingeniero en sistema</p>
-                <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
-
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                  ver perfil
-                </button>
+              <div class="col-lg-3">
+                <div class="card">
+                    <center>
+                      <img class="card-img-top" src="img/lucj.png" alt="Card image" >
+                    </center>
+                    <div class="card-body">
+                      <h4 class="card-title">Fabian sneyder</h4>
+                      <p class="card-text">Ingeniero en sistema</p>
+                      <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+      
+                      <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ver perfil
+                      </button>
+                    </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div style=" float: left; width: 30%; margin: 1%;">
 
-            <div class="card">
-              <img class="card-img-top" src="img/lucj.png" alt="Card image" style="width:100%">
-              <div class="card-body">
-                <h4 class="card-title">Fabian sneyder</h4>
-                <p class="card-text">ingeniero en sistema</p>
-                <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+            </div><!-- Fin del row dentro del col-->
+          
+      </div>
 
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                  ver perfil
-                </button>
-              </div>
-            </div>
-          </div>
-
-
-
+      <div class="col-lg-4">
+        <div class="emmpleo">
+          <center>
+            <h2> CATEGORIAS</h2>
+            <button type="submit" class="btn ">Veterinaria</button>
+            <button type="submit" class="btn ">Zootecnia</button>
+            <button type="submit" class="btn ">Agropecuaria</button>
+          </center>
+        </div>
+      </div>
+    </div>
 
     </div>
+  </div>
+
+
+
+
   </main>
    
 </body>
