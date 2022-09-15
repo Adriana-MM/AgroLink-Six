@@ -4,14 +4,14 @@
 }
 
 .navbar-brand{
-	color: #922B21;
+	color: #fff;
 	margin-left: 20px;
 	font-size: 24px;
 
 }
 
 .navbar-collapseE .btn{
-	color: #922B21;
+	color: #fff;
 	text-decoration: underline;
 	
 }
@@ -19,13 +19,13 @@
 .card{
 	margin-top: 5px;
 	text-align: center;
-	border: 2px solid #4FFF33;
+	border: 2px solid #39a529;
 	color: #922B21;
 }
 
 .card .btn{
-	border-bottom: 2px solid #4FFF33;
-	border-top: 2px solid #4FFF33;
+	border-bottom: 2px solid #39a529;
+	border-top: 2px solid #39a529;
 	transition: 400ms;
 	color: #922B21;
 }
@@ -37,9 +37,9 @@
 
 .card .btn:hover{
 	width: 80%;
-	background-color: #4FFF33;
+	background-color: #39a529;
 	color: #fff;
-	border: 1px solid #4FFF33;
+	border: 1px solid #39a529;
 }
 
 .card-body{
@@ -57,8 +57,8 @@
 }
 
 .emmpleo h2{
-	background-color: #4FFF33;
-	color: #922B21;
+	background-color: #39a529;
+	color: #fff;
 	border-radius: 5px;
 }
 
