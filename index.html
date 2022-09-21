@@ -30,7 +30,7 @@
         <div class="col-12 col-sm-12 col-md-7 col-lg-3 col-xl-3">
           <div class=" navbar-collapseE" >
             <button type="button" class="btn " data-bs-toggle="modal"
-              data-bs-target="#resgistro">Crea tu cuenta</button>
+              data-bs-target="#resgistro" >Crea tu cuenta</button>
             <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#iniciar">Ingresa</button>
           </div>
      
@@ -57,21 +57,31 @@
         <!-- Modal body -->
         <div class="modal-body">
 
+          <div class="formulario">
+            <form action="/action_page.php">
+              <div class="row justify-content-center">
+                <div class=" col-lg-12 mb-3 mt-3">
+                  <label for="email">Correo:</label>
+                  <input type="email" id="email" placeholder="Digite su correo" name="email">
+                </div>
+    
+    
+                <div class="col-lg-12 mb-3">
+                  <label for="pwd">Contraseña:</label>
+                  <input type="password"  id="pwd" placeholder="Enter password" name="pswd">
+                </div>
+                <div class="col-lg-12">
+                  <center>
+                    <button type="submit" >Ingresar</button>
+                  </center>
+                
+                </div>
+                
+              </div>
+  
+            </form>
+          </div>
 
-          <form action="/action_page.php">
-            <div class="mb-3 mt-3">
-              <label for="email">Correo:</label>
-              <input type="email" class="form-control" id="email" placeholder="Digite su correo" name="email">
-            </div>
-
-
-            <div class="mb-3">
-              <label for="pwd">Contraseña:</label>
-              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-            </div>
-
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </form>
 
         </div>
 
@@ -186,11 +196,20 @@
     
 <div class="row">
 
-
-      <div class="col-lg-8">
+    <div class="col-lg-4 col-md-3">
+      <div class="emmpleo">
+        <center>
+          <h2> CATEGORIAS</h2>
+          <button type="submit" class="btn ">Veterinaria</button>
+          <button type="submit" class="btn ">Zootecnia</button>
+          <button type="submit" class="btn ">Agropecuaria</button>
+        </center>
+      </div>
+    </div>
+      <div class="col-lg-8 col-md-9">
      
             <div class="row">
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6 col-sm-4">
                 <div class="card">
                     <center>
                       <img class="card-img-top" src="img/lucj.png" alt="Card image" >
@@ -207,7 +226,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6 col-sm-8">
                 <div class="card">
                     <center>
                       <img class="card-img-top" src="img/lucj.png" alt="Card image" >
@@ -224,7 +243,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="card">
                     <center>
                       <img class="card-img-top" src="img/lucj.png" alt="Card image" >
@@ -241,7 +260,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="card">
                     <center>
                       <img class="card-img-top" src="img/lucj.png" alt="Card image" >
@@ -258,7 +277,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="card">
                     <center>
                       <img class="card-img-top" src="img/lucj.png" alt="Card image" >
@@ -275,7 +294,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="card">
                     <center>
                       <img class="card-img-top" src="img/lucj.png" alt="Card image" >
@@ -292,7 +311,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="card">
                     <center>
                       <img class="card-img-top" src="img/lucj.png" alt="Card image" >
@@ -309,7 +328,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="card">
                     <center>
                       <img class="card-img-top" src="img/lucj.png" alt="Card image" >
@@ -330,25 +349,26 @@
           
       </div>
 
-      <div class="col-lg-4">
-        <div class="emmpleo">
-          <center>
-            <h2> CATEGORIAS</h2>
-            <button type="submit" class="btn ">Veterinaria</button>
-            <button type="submit" class="btn ">Zootecnia</button>
-            <button type="submit" class="btn ">Agropecuaria</button>
-          </center>
-        </div>
-      </div>
+
     </div>
 
     </div>
   </div>
 
 
+  <div class="container-fluid">
+    <div class="row ">
+      <div class="col-lg-12 footer">
+        <a href="">Sobre nosotros</a>
+        <a href="">Contactanos</a>
+      </div>
+    </div>
 
+  </div>
 
   </main>
+
+
    
 </body>
 
