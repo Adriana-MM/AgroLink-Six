@@ -121,5 +121,21 @@ height: 33px;
 .modal-header button{
 	color:#39a529;
 }
+.footer{
+	border-radius: 5px;
+	margin-top: 10px;
+	text-align: center;
+	background-color: #39a529;
+	height: 40px;
+	padding: 5px 10px;
+}
+
+.footer a{
+
+	margin-left: 20px;
+	color: #fff;
+}
+
+
 
 
