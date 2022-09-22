@@ -136,6 +136,34 @@ height: 33px;
 	color: #fff;
 }
 
+.informacionPersona{
+	margin-top: 100px;
+}
+
+.informacion{
+	text-align: center;
+}
+
+.imagen{
+	margin: auto;
+	border-top: 1px solid #39a529;
+	border-bottom: 1px solid #39a529;
+	padding: 10px 20px;
+}
+
+.imagen img{
+	margin-left: 20px;
+}
+
+
+.derecha{
+	border-left: 3px solid #39a529;
+}
+
+.nombre{
+	font-size: 22px;
+	font-weight: bold;
+}
 
 
 
