@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil</title>
+
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unna:ital@1&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- header -->
+ 
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-dark  fixed-top" style="background-color: #39a529; ">
+
+            <div class="col-12 col-sm-12 col-md-5 col-lg-9 col-xl-9">
+            <a class="navbar-brand" th:href="@{/}">AgroLinkSix</a>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-7 col-lg-3 col-xl-3">
+            <div class=" navbar-collapseE" >
+                <button type="button" class="btn " data-bs-toggle="modal"
+                data-bs-target="#resgistro" >Crea tu cuenta</button>
+                <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#iniciar">Ingresa</button>
+            </div>
+        
+            </div>
+
+        </nav>
+    </div>
+
+
+
+
+
+    <!-- The Modal -->
+    <div class="modal" id="iniciar">
+        <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <h4 class="modal-title"> Iniciar Sesión</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+
+            <div class="formulario">
+                <form action="/action_page.php">
+                <div class="row justify-content-center">
+                    <div class=" col-lg-12 mb-3 mt-3">
+                    <label for="email">Correo:</label>
+                    <input type="email" id="email" placeholder="Digite su correo" name="email">
+                    </div>
+        
+        
+                    <div class="col-lg-12 mb-3">
+                    <label for="pwd">Contraseña:</label>
+                    <input type="password"  id="pwd" placeholder="Enter password" name="pswd">
+                    </div>
+                    <div class="col-lg-12">
+                    <center>
+                        <button type="submit" >Ingresar</button>
+                    </center>
+                    
+                    </div>
+                    
+                </div>
+    
+                </form>
+            </div>
+
+            </div>
+
+
+        </div>
+        </div>
+    </div>
+
+<div class="container-fluid">
+
+   <!-- The Modal -->
+   <div class="modal" id="resgistro">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Registrarse</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="formulario" >
+            <form action="/action_page.php">
+              <div class="row justify-content-center">
+                <div class=" col-lg-6 mb-3 mt-3 ">
+                  <label for="email">Correo:</label><br>
+                  <input type="email"  id="email" placeholder="Ingrese su correo" name="email">
+                </div>
+
+  
+                <div class="col-lg-6 mb-3 mt-3">
+                  <label for="enlace">Enlace cvLac:</label><br>
+                  <input type="text"  id="email" placeholder="Enlacen cvLac" name="enlace">
+                </div>
+
+                <div class="col-lg-6 mb-3 ">
+                  <label for="pwd">Nombres:</label>
+                  <input type="text"  id="pwd" placeholder="Enter nombres y apellidos" name="pswd">
+                </div>
+
+                <div class="col-lg-6 mb-3 ">
+                  <label for="pwd">Número de identificación:</label>
+                  <input type="number"  id="numoeo" placeholder="Identificador" name="identificador">
+                </div>
+
+                <div class="col-lg-6 mb-3 ">
+                  <label for="pwd">Password:</label>
+                  <input type="password" id="pwd" placeholder="Enter password" name="pswd">
+                </div>
+
+                <div class="col-lg-12 mb-2 ">
+                  <p>¡Al enviar los datos acepta ls <a href="">Terminos y condiciones</a>!</p>
+                </div>
+                
+
+ 
+
+                <div class="col-lg-12">
+                  <center>
+                    <button type="submit" >Enviar</button>
+                  </center>
+                 
+                </div>
+
+  
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+  <!-- The Modal -->
+
+
+
+ 
+  
+
+
+<main>
+
+
+    <div class="container informacionPersona">
+        <div class="row">
+            
+                <div class="col-lg-12 col-md-12">
+        <p>Usuarios</p>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>pNom</th>
+           
+            </tr>
+            
+            <tr th:each="usuario:${usuarios}">
+                <td th:text="${usuario.idusuario}"></td>
+                <td th:text="${usuario.idrol}"></td>
+                <td th:text="${usuario.password}"></td>
+            </tr>
+        </table>
+    </div>
+            <div class="col-lg-8">
+                <div class="perfilProfesional">
+                    <h1>Perfil Profesional</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore impedit temporibus quasi, soluta placeat, dolor dolorem commodi minima voluptates id dolorum tenetur quas sapiente. Voluptatem est hic ipsum sint temporibus!<br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor assumenda corrupti ipsa in modi veniam, libero, alias voluptatum repellat eius accusamus est provident esse minima. Earum suscipit cum laboriosam magnam?<br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa neque quo similique! Odio at quis placeat fugit quasi velit porro enim perferendis nobis, voluptatum culpa neque nostrum laborum. Officiis, distinctio. <br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officia optio, praesentium nostrum officiis repellat, dolore fuga iste nobis quibusdam eos voluptates tempora deserunt qui. Ullam maxime iusto tenetur consequuntur.
+                    </p>
+    
+                    <h1>Cursos</h1>
+                    <p> Terapia Respiratoria y cuidado crítico en pequeñas especies <a href=""> Ir al certificado</a></p>
+                    <p>Medicina Interna Felina Curso Internacional en Fisioterapia Equina <a href=""> Ir al certificado</a> </p>
+                    <p>Auxiliar de Clínica veterinaria <a href=""> Ir al certificado</a></p>
+    
+                </div>
+            </div>
+            <div class="col-lg-4 derecha">
+                <div class="imagen">
+                    <img src="assets/img/lucj.png" alt="Julian Andres Lopez Suarez" width="80%" height="150px">
+                </div>
+                <div class="informacion">
+                    <p class="nombre">Julian Andres Lopez Suares</p>
+                    <p>julianAndres@gmail.com</p>
+                    <p>300 000 00 00</p>
+                    <p>Región: Andina </p>
+                    <p>Veterinario</p>
+                    <p>Puntuación: Sin calificar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  <div class="container-fluid mt-5">
+    <div class="row ">
+      <div class="col-lg-12 footer">
+        <a href="">Sobre nosotros</a>
+        <a href="">Contactanos</a>
+      </div>
+    </div>
+
+
+
+  </main>
+
+
+   
+</body>
+
+</html>

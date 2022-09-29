@@ -1,0 +1,174 @@
+*{
+	font-family: 'Unna', serif;
+
+}
+
+.navbar-brand{
+	color: #fff;
+	margin-left: 20px;
+	font-size: 24px;
+
+}
+
+.navbar-collapseE .btn{
+	color: #fff;
+	text-decoration: underline;
+	
+}
+
+.card{
+	margin-top: 5px;
+	text-align: center;
+	border: 2px solid #39a529;
+	color: #922B21;
+}
+
+.card .btn{
+	border-bottom: 2px solid #39a529;
+	border-top: 2px solid #39a529;
+	transition: 400ms;
+	color: #922B21;
+}
+
+.card img{
+	width: 80%;
+	height: 100px;
+}
+
+.card .btn:hover{
+	width: 80%;
+	background-color: #39a529;
+	color: #fff;
+	border: 1px solid #39a529;
+}
+
+.card-body{
+	background-color: rgba(79, 255, 51, 0.1);
+	margin: 5px;
+	border-radius: 5px;
+}
+
+
+
+
+
+.navbar-collapseE {
+	float:right;
+}
+
+.emmpleo h2{
+	background-color: #39a529;
+	color: #fff;
+	border-radius: 5px;
+}
+
+
+.emmpleo button{
+	border-bottom: 1px solid #922B21;
+	color: #922B21;
+	font-size: 18px;
+	width: 45%;
+	margin-top:3px
+}
+
+.empleo button p{
+    margin: 0!important;
+    display: inline;
+}
+
+.emmpleo button:hover{
+	border: 1px solid #922B21;
+	color: #922B21;
+}
+
+.modal{
+	background-color: rgba(238, 238, 238, 0.4);
+}
+
+.mitad{
+	width: 90%;
+
+}
+
+.formulario button{
+	border: none;
+height: 33px;
+	transition: 400ms;
+	color: #fff;
+	width: 30%;
+	background-color: #39a529;
+	border-radius: 5px;
+}
+
+.formulario button:hover{
+
+	border-bottom: 2px solid #39a529;
+	border-top: 2px solid #39a529;
+	color: #39a529;
+	width: 35%;
+	background-color: #fff;
+    box-shadow:  0px 2px 18px 0px #39a529;
+
+}
+
+.formulario input{
+	border : 1px solid #39a529;
+	width: 100%;
+	border-radius:10px;
+	height: 38px;
+	outline: none;
+}
+
+.formulario p{
+	text-align: center;
+}
+
+.modal-header button{
+	color:#39a529;
+}
+.footer{
+	border-radius: 5px;
+	margin-top: 10px;
+	text-align: center;
+	background-color: #39a529;
+	height: 40px;
+	padding: 5px 10px;
+}
+
+.footer a{
+
+	margin-left: 20px;
+	color: #fff;
+}
+
+.informacionPersona{
+	margin-top: 100px;
+}
+
+.informacion{
+	text-align: center;
+}
+
+.imagen{
+	margin: auto;
+	border-top: 1px solid #39a529;
+	border-bottom: 1px solid #39a529;
+	padding: 10px 20px;
+}
+
+.imagen img{
+	margin-left: 20px;
+}
+
+
+.derecha{
+	border-left: 3px solid #39a529;
+}
+
+.nombre{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+
+
