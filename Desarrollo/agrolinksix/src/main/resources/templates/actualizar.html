@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unna:ital@1&display=swap" rel="stylesheet">
+  
+    <title>Actualizar datos</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-dark  fixed-top" style="background-color: #39a529; ">
+  
+          <div class="col-12 col-sm-12 col-md-5 col-lg-9 col-xl-9">
+            <a class="navbar-brand" th:href="@{/administrador}">AgroLinkSix</a>
+          </div>
+  
+        
+  
+      </nav>
+    </div>
+
+
+    
+<div class="container">
+
+
+ 
+         <!-- Modal Header -->
+         <div class="modal-header">
+           <h4 class="modal-title">Actualizar datos</h4>
+           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+         </div>
+ 
+         <!-- Modal body -->
+         <div class="modal-body">
+           <div class="formulario" >
+             <form th:action="@{/guardar}" method="post" th:object="${freelancers}">
+               <div class="row justify-content-center mt-5">
+
+                <div class="col-lg-3 mb-3 ">
+                    <label for="idusuario">Número de identificación:</label>
+                    <input type="number"  id="idfreelancer"  name="idfreelancer" th:field="*{idfreelancer}" hidden>
+
+                    <input type="number"  id="idusuario" placeholder="Su usuario será su número de identificación" name="idusuario" th:field="*{idusuario}">
+                </div>
+
+                <div class="col-lg-3 mb-3 ">
+                    <label for="pnombre">Primer nombre:</label>
+                    <input type="text"  id="pnombre" placeholder="Ingrese su primer nombre" name="pnombre" th:field="*{pnombre}" >
+                </div>
+                <div class="col-lg-3 mb-3 ">
+                    <label for="snombre">Segundo nombre:</label>
+                    <input type="text"  id="snombre" placeholder="Ingrese su segundo nombre" name="snombre" th:field="*{snombre}" >
+                </div>
+
+                <div class="col-lg-3 mb-3 ">
+                    <label for="papellido">Primer apellido:</label>
+                    <input type="text"  id="papellido" placeholder="Ingrese su primer apellido" name="papellido" th:field="*{papellido}" >
+                </div>
+                <div class="col-lg-3 mb-3 ">
+                    <label for="sapellido">Segundo apellido:</label>
+                    <input type="text"  id="sapellido" placeholder="Ingrese su segundo apellido" name="sapellido" th:field="*{sapellido}" >
+                </div>
+
+                 <div class=" col-lg-3 mb-3 ">
+                   <label for="correo">Correo:</label><br>
+                   <input type="email"  id="correo" placeholder="Ingrese su correo" name="correo" th:field="*{correo}" >
+                 </div>
+ 
+   
+                 <div class="col-lg-3 mb-3 ">
+                   <label for="enlacecvlac">Enlace cvLac:</label><br>
+                   <input type="text"  id="enlacecvlac" placeholder="Enlacen cvLac" name="enlacecvlac" th:field="*{enlacecvlac}" >
+                   <input type="text"  id="imagen"  name="imagen" value="usuario.jpg" hidden th:field="*{imagen}">
+                 </div>
+
+                 <div class="col-lg-3 mb-3 ">
+                    <label for="idregion">Región:</label><br>
+                    <input name="idregion" id="idregion" th:field="*{idregion}" >
+                  </div>
+
+                  <div class="col-lg-3 mb-3">
+                    <label for="cargo">Cargo:</label><br>
+                    
+                    <input name="idcategoria" id="idcategoria" th:field="*{idcategoria}" >
+                    <select name="idestado" id="idestado" th:field="*{idestado}">
+                        <option value="1">Activo</option>
+                        <option value="2">Inactivo</option>
+                    </select>
+                    
+                  </div>
+
+                  <div class="col-lg-6 mb-3 ">
+                    <label for="cargo">Perfil profesional:</label><br>
+                    <textarea name="descripcion" id="descripcion" cols="70" rows="5" th:field="*{descripcion}" ></textarea>
+                    <input type="number" name="puntuacion" value="0" hidden th:field="*{puntuacion}">
+                  </div>
+
+                  <div class="col-lg-3 mb-3 ">
+                    <label for="telefono">Número celular:</label><br>
+                    <input type="number"  id="telefono" placeholder="Número celular" name="telefono" th:field="*{telefono}" >
+                  </div>
+
+                 
+ 
+  
+ 
+                 <div class="col-lg-12">
+                   <center>
+                     <button type="submit" >Actualizar</button>
+                   </center>
+                  
+                 </div>
+ 
+   
+               </div>
+             </form>
+           </div>
+         </div>
+ 
+ 
+ 
+
+   <!-- The Modal -->
+ 
+ </div>
+ 
+  
+    
+</body>
+</html>

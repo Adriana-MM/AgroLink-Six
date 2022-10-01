@@ -11,7 +11,6 @@ import lombok.Data;
 public class Usuario implements Serializable{
     
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer idusuario;
     private Integer idrol;
     private String password;

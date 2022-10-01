@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"  lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unna:ital@1&display=swap" rel="stylesheet">
+  
+    <title>Iniciar sesión</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-dark  fixed-top" style="background-color: #39a529; ">
+  
+          <div class="col-12 col-sm-12 col-md-5 col-lg-9 col-xl-9">
+            <a class="navbar-brand" th:href="@{/}">AgroLinkSix</a>
+          </div>
+  
+          <div class="col-12 col-sm-12 col-md-7 col-lg-3 col-xl-3">
+            <div class=" navbar-collapseE" >
+                <button type="button" class="btn "><a th:href="@{/registrarse}" >Crea tu cuenta</a></button>
+            
+            </div>
+       
+          </div>
+  
+      </nav>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center mt-2">
+        <div class="col-lg-6">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"> Iniciar Sesión</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+
+          <div class="formulario">
+            <form th:action="@{/login}" method="post">
+              <div class="row justify-content-center">
+                <div class=" col-lg-8 mb-3 mt-3">
+                  <label for="username">Usuario:</label>
+                  <input type="text" id="username" placeholder="Digite su usuario" name="username">
+                </div>
+    
+    
+                <div class="col-lg-8 mb-3 ">
+                  <label for="password">Contraseña:</label>
+                  <input type="password"  id="password" placeholder="Digite su contraseña" name="password">
+                </div>
+                <div class="col-lg-10">
+                  <center>
+                      
+                    <button type="submit" >Ingresar</button>
+                  </center>
+                
+                </div>
+                
+              </div>
+  
+            </form>
+          </div>
+
+
+        </div>
+
+        </div>
+         </div>
+    </div>
+    
+</body>
+</html>

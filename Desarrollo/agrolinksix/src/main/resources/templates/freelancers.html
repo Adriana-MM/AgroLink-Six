@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unna:ital@1&display=swap" rel="stylesheet">
+
+    <title>Bienvendio freelancer</title>
+</head>
+<body>
+
+    
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-dark  fixed-top" style="background-color: #39a529; ">
+
+            <div class="col-12 col-sm-12 col-md-5 col-lg-9 col-xl-9">
+            <a class="navbar-brand" th:href="@{/miperfil}">Mi perfil</a>
+            </div>
+
+        </nav>
+    </div>
+
+    <div class="container justify-content-center">
+        <div class="row mt-5">
+            <div class="col-lg-8 col-md-9">
+     
+                <div class="row mt-3">
+                  <div class="col-lg-3 col-md-6 col-sm-4" th:each="freelancer:${freelancers}">
+                    <div class="card">
+                        <center>
+                          <img class="card-img-top" src="assets/img/usuario.jpg" alt="Card image" >
+                        </center>
+                        <div class="card-body">
+                          <h4 class="card-title" th:text="${freelancer.pnombre}+${freelancer.snombre}+${freelancer.papellido}+${freelancer.sapellido}" style="font-size: 20px;"></h4>
+                          <p class="card-text" th:text="${freelancer.idcategoria}">Ingeniero en sistema</p>
+                          <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+          
+                          <a type="button" th:href="@{/miperfil/}" class="btn " >
+                            Ver perfil
+                          </a>
+                        </div>
+                    </div>
+                  </div>
+    
+                
+    
+    
+                </div><!-- Fin del row dentro del col-->
+              
+          </div>
+        </div>
+    </div>
+</body>
+</html>

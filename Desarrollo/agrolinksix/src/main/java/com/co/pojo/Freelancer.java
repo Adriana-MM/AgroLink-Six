@@ -9,7 +9,7 @@ import lombok.Data;
 @Table(name="freelancer")
 public class Freelancer implements Serializable{
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idfreelancer;
     private Integer idusuario;
     private String pnombre;

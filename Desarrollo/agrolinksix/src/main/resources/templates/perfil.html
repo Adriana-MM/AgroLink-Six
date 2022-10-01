@@ -31,7 +31,7 @@
             <div class=" navbar-collapseE" >
                 <button type="button" class="btn " data-bs-toggle="modal"
                 data-bs-target="#resgistro" >Crea tu cuenta</button>
-                <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#iniciar">Ingresa</button>
+                <button type="button" class="btn " ><a  th:href="@{/login}">Iniciar sesión</a></button>
             </div>
         
             </div>
@@ -169,53 +169,31 @@
 <main>
 
 
-    <div class="container informacionPersona">
+    <div class="container informacionPersona" th:each="freelancer:${freelancers}">
         <div class="row">
             
-                <div class="col-lg-12 col-md-12">
-        <p>Usuarios</p>
-        <table>
-            <tr>
-                <th>id</th>
-                <th>pNom</th>
-           
-            </tr>
-            
-            <tr th:each="usuario:${usuarios}">
-                <td th:text="${usuario.idusuario}"></td>
-                <td th:text="${usuario.idrol}"></td>
-                <td th:text="${usuario.password}"></td>
-            </tr>
-        </table>
-    </div>
             <div class="col-lg-8">
                 <div class="perfilProfesional">
                     <h1>Perfil Profesional</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore impedit temporibus quasi, soluta placeat, dolor dolorem commodi minima voluptates id dolorum tenetur quas sapiente. Voluptatem est hic ipsum sint temporibus!<br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor assumenda corrupti ipsa in modi veniam, libero, alias voluptatum repellat eius accusamus est provident esse minima. Earum suscipit cum laboriosam magnam?<br>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa neque quo similique! Odio at quis placeat fugit quasi velit porro enim perferendis nobis, voluptatum culpa neque nostrum laborum. Officiis, distinctio. <br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officia optio, praesentium nostrum officiis repellat, dolore fuga iste nobis quibusdam eos voluptates tempora deserunt qui. Ullam maxime iusto tenetur consequuntur.
+                    <p th:text="${freelancer.descripcion}">
+                       
                     </p>
     
-                    <h1>Cursos</h1>
-                    <p> Terapia Respiratoria y cuidado crítico en pequeñas especies <a href=""> Ir al certificado</a></p>
-                    <p>Medicina Interna Felina Curso Internacional en Fisioterapia Equina <a href=""> Ir al certificado</a> </p>
-                    <p>Auxiliar de Clínica veterinaria <a href=""> Ir al certificado</a></p>
+    
     
                 </div>
             </div>
             <div class="col-lg-4 derecha">
                 <div class="imagen">
-                    <img src="assets/img/lucj.png" alt="Julian Andres Lopez Suarez" width="80%" height="150px">
+                    <img src="assets/img/usuario.jpg" alt="Julian Andres Lopez Suarez" width="80%" height="150px">
                 </div>
                 <div class="informacion">
-                    <p class="nombre">Julian Andres Lopez Suares</p>
-                    <p>julianAndres@gmail.com</p>
-                    <p>300 000 00 00</p>
+                    <p class="nombre" th:text="${freelancer.pnombre}"></p>
+                    <p th:text="${freelancer.correo}"></p>
+                    <p th:text="${freelancer.telefono}"></p>
                     <p>Región: Andina </p>
                     <p>Veterinario</p>
-                    <p>Puntuación: Sin calificar</p>
+                    <p th:text="${freelancer.puntuacion}"></p>
                 </div>
             </div>
         </div>

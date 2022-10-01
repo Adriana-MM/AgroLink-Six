@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unna:ital@1&display=swap" rel="stylesheet">
+  
+    <title>Mi perfil</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-dark  fixed-top" style="background-color: #39a529; ">
+  
+          <div class="col-12 col-sm-12 col-md-5 col-lg-9 col-xl-9">
+            <a class="navbar-brand" th:href="@{/freelancer}">AgroLinkSix</a>
+          </div>
+  
+          <div class="col-12 col-sm-12 col-md-7 col-lg-3 col-xl-3">
+            <div class=" navbar-collapseE" >
+
+            </div>
+       
+          </div>
+  
+      </nav>
+    </div>
+
+
+    
+<div class="container">
+
+
+    <div class="container informacionPersona" th:each="freelancer:${freelancers}">
+        <div class="row">
+            
+            <div class="col-lg-8">
+                <div class="perfilProfesional">
+                    <h1>Perfil Profesional</h1>
+                    <p th:text="${freelancer.descripcion}">
+                       
+                    </p>
+
+                    <a  th:href="@{/actualizarme/}+${freelancer.idfreelancer}" style="color:#000;">Editar mi información</a>
+    
+    
+    
+                </div>
+            </div>
+            <div class="col-lg-4 derecha">
+                <div class="imagen">
+                    <img src="assets/img/usuario.jpg" alt="Julian Andres Lopez Suarez" width="80%" height="150px">
+                </div>
+                <div class="informacion">
+                    <p class="nombre" th:text="${freelancer.pnombre}"></p>
+                    <p th:text="${freelancer.correo}"></p>
+                    <p th:text="${freelancer.telefono}"></p>
+                    <p>Región: Andina </p>
+                    <p>Veterinario</p>
+                    <p th:text="${freelancer.puntuacion}"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+ 
+  
+    
+</body>
+</html>
