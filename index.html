@@ -55,7 +55,7 @@
       <div class="emmpleo">
         <center>
           <h2> CATEGORIAS</h2>
-          <button type="submit" class="btn " th:each="categoria:${categorias}"><span ">Ovicultor</span></button>     
+          <button type="submit" class="btn " th:each="categoria:${categorias}"><span ">Apicultor</span></button>      
           <button type="submit" class="btn " th:each="categoria:${categorias}"><span ">Agricultor</span></button> 
           <button type="submit" class="btn " th:each="categoria:${categorias}"><span ">Ganadero</span></button>  
             <button type="submit" class="btn " th:each="categoria:${categorias}"><span ">Horticultor</span></button>     
@@ -70,14 +70,14 @@
               <div class="col-lg-3 col-md-6 col-sm-4" th:each="freelancer:${freelancers}">
                 <div class="card">
                     <center>
-                      <img class="card-img-top" src="assets/img/usuario.jpg" alt="Card image" >
+                      <img class="card-img-top" src="assets/img/men.jpg" alt="Card image" >
                     </center>
                     <div class="card-body">
-                      <h4 class="card-title"  style="font-size: 20px;">bairon Rogriguez Gonzales</h4>
-                      <p class="card-text" th:text="${freelancer.idcategoria}">Ingeniera agricola</p>
+                      <h4 class="card-title"  style="font-size: 20px;">Wilson Alexander Garay Carrillo</h4>
+                      <p class="card-text" th:text="${freelancer.idcategoria}">Ingeniero agronomo</p>
                       <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
       
-                      <a type="button" th:href="@{/perfil}" class="btn " >
+                      <a class="btn btn-primary" href="https://www.linkedin.com/in/wilsongaraycarrillo/?originalSubdomain=co">
                         Ver perfil
                       </a>
                     </div>
@@ -87,11 +87,28 @@
               <div class="col-lg-3 col-md-6 col-sm-4" th:each="freelancer:${freelancers}">
                 <div class="card">
                     <center>
-                      <img class="card-img-top" src="assets/img/usuario.jpg" alt="Card image" >
+                      <img class="card-img-top" src="assets/img/ganados.JPG" alt="Card image" >
                     </center>
                     <div class="card-body">
-                      <h4 class="card-title"  style="font-size: 20px;">Eliana Buitraga Jimenez</h4>
-                      <p class="card-text" th:text="${freelancer.idcategoria}">Ganadera</p>
+                      <h4 class="card-title"  style="font-size: 20px;">Juan Jiménez</h4>
+                      <p class="card-text" th:text="${freelancer.idcategoria}">Ganadero</p>
+                      <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+      
+                      <a type="button" th:href="@{/perfil}" class="btn " >
+                        Ver perfil
+                      </a>
+                    </div>
+                </div>
+              </div>
+            
+            <div class="col-lg-3 col-md-6 col-sm-4" th:each="freelancer:${freelancers}">
+                <div class="card">
+                    <center>
+                      <img class="card-img-top" src="assets/img/honey.webp" alt="Card image" >
+                    </center>
+                    <div class="card-body">
+                     <h4 class="card-title"  style="font-size: 20px;">Fernando Barrera Marulanda</h4>
+                     <p class="card-text" th:text="${freelancer.idcategoria}">Apicultor</p>
                       <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
       
                       <a type="button" th:href="@{/perfil}" class="btn " >
@@ -107,25 +124,8 @@
                       <img class="card-img-top" src="assets/img/usuario.jpg" alt="Card image" >
                     </center>
                     <div class="card-body">
-                      <h4 class="card-title"  style="font-size: 20px;">Santiago Hernandez Torres</h4>
-                      <p class="card-text" th:text="${freelancer.idcategoria}">Ovicultor</p>
-                      <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
-      
-                      <a type="button" th:href="@{/perfil}" class="btn " >
-                        Ver perfil
-                      </a>
-                    </div>
-                </div>
-              </div>
-            
-            <div class="col-lg-3 col-md-6 col-sm-4" th:each="freelancer:${freelancers}">
-                <div class="card">
-                    <center>
-                      <img class="card-img-top" src="assets/img/usuario.jpg" alt="Card image" >
-                    </center>
-                    <div class="card-body">
-                      <h4 class="card-title"  style="font-size: 20px;">Juan Jose nuñez Saenz</h4>
-                      <p class="card-text" th:text="${freelancer.idcategoria}">Ganadeo</p>
+                      <h4 class="card-title"  style="font-size: 20px;">Dayana Sáenz</h4>
+                      <p class="card-text" th:text="${freelancer.idcategoria}">Horticultor</p>
                       <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
       
                       <a type="button" th:href="@{/perfil}" class="btn " >
